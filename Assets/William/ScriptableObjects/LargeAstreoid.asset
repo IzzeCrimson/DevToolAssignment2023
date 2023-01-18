@@ -15,7 +15,7 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   minForce: 2
   maxForce: 6
-  minSize: 0.4
-  maxSize: 1.5
+  minSize: 0.2
+  maxSize: 1
   minTorque: 0.1
   maxTorque: 0.5
