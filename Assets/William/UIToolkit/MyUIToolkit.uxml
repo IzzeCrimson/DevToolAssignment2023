@@ -1,3 +1,2 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:SliderInt picking-mode="Ignore" label="Ship Force" value="42" high-value="100" show-input-field="true" low-value="1" />
 </ui:UXML>
