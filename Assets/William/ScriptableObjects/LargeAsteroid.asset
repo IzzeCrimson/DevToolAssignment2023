@@ -20,3 +20,4 @@ MonoBehaviour:
   maxSize: 1.2
   minTorque: 0.4
   maxTorque: 0.8
+  damage: 3
