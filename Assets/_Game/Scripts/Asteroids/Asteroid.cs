@@ -10,8 +10,13 @@ namespace Asteroids
     {
         [SerializeField] private ScriptableEventInt _onAsteroidDestroyed;
 
+        //Edited by William Isacsson
         [Header("Scriptable Object:")]
-        public AstreoidType astreoidType;
+        public AsteroidType astreoidType;
+        
+        //Edited by William Isacsson
+        [Header("Sprite Rendere:")]
+        [SerializeField] private SpriteRenderer _spriteRenderer;
 
         [Header("References:")]
         [SerializeField] private Transform _shape;
@@ -19,6 +24,23 @@ namespace Asteroids
         private Rigidbody2D _rigidbody;
         private Vector3 _direction;
         private int _instanceId;
+
+        static readonly int shaderPropertyColor = Shader.PropertyToID("_Color");
+        private MaterialPropertyBlock _materialPropertyBlock;
+        public MaterialPropertyBlock MaterialPropertyBlock
+        {
+            get
+            {
+                if (_materialPropertyBlock == null)
+                {
+                    _materialPropertyBlock = new MaterialPropertyBlock();
+                    //return materialPropertyBlock;
+                }
+
+                return _materialPropertyBlock;
+            }
+            
+        }
 
         private void Start()
         {
@@ -29,6 +51,7 @@ namespace Asteroids
             AddForce();
             AddTorque();
             SetSize();
+            SetColor();
         }
         
         private void OnTriggerEnter2D(Collider2D other)
@@ -61,7 +84,13 @@ namespace Asteroids
                 Destroy(gameObject);
             }
         }
-        
+
+        private void SetColor()
+        {
+            MaterialPropertyBlock.SetColor(shaderPropertyColor, astreoidType.asteroidColor);
+            _spriteRenderer.SetPropertyBlock(MaterialPropertyBlock);
+        }
+
         private void SetDirection()
         {
             var size = new Vector2(3f, 3f);

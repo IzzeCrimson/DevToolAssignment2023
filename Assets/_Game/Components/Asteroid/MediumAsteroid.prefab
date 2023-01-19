@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1784223117350305363}
   - component: {fileID: 1784223117350305362}
   m_Layer: 0
-  m_Name: Asteroid
+  m_Name: MediumAsteroid
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onAsteroidDestroyed: {fileID: 11400000, guid: 6194a1f60d68f9f4da5519ce74b63a58, type: 2}
-  astreoidType: {fileID: 11400000, guid: 7de8ffa97d4bfd845868ed18ffc7a4cc, type: 2}
+  astreoidType: {fileID: 11400000, guid: 710620800129c4a4a8e65fd72b0e814c, type: 2}
   _spriteRenderer: {fileID: 7434321719335165977}
   _shape: {fileID: 1524412162417054026}
 --- !u!50 &1784223117350305362

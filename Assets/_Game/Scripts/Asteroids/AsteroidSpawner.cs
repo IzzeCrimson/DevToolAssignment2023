@@ -6,7 +6,9 @@ namespace Asteroids
 {
     public class AsteroidSpawner : MonoBehaviour
     {
-        [SerializeField] private Asteroid _asteroidPrefab;
+        //Added by William Isacsson
+        [SerializeField] private GameObject[] _asteroidPrefabs;
+        //[SerializeField] private Asteroid _asteroidPrefab;
         [SerializeField] private float _minSpawnTime;
         [SerializeField] private float _maxSpawnTime;
         [SerializeField] private int _minAmount;
@@ -61,12 +63,17 @@ namespace Asteroids
         private void Spawn()
         {
             var amount = Random.Range(_minAmount, _maxAmount + 1);
-            
+
+            //Added a new int so the script can grab a random astreoid from the array
+            int number;
+
             for (var i = 0; i < amount; i++)
             {
                 var location = GetSpawnLocation();
                 var position = GetStartPosition(location);
-                Instantiate(_asteroidPrefab, position, Quaternion.identity);
+                number = Random.Range(0, _asteroidPrefabs.Length);
+                Debug.Log(number);
+                Instantiate(_asteroidPrefabs[number], position, Quaternion.identity);
             }
         }
 

@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57a437526395ac24b9c1c2a6d8de3543, type: 3}
-  m_Name: LargeAstreoid
+  m_Script: {fileID: 11500000, guid: 306fcff9e60a75441b685573785f45be, type: 3}
+  m_Name: LargeAsteroid
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0, b: 0, a: 0}
+  asteroidSize: 2
+  asteroidColor: {r: 0.5421686, g: 0, b: 1, a: 1}
   minForce: 2
   maxForce: 6
-  minSize: 0.2
-  maxSize: 1
-  minTorque: 0.1
-  maxTorque: 0.5
+  minSize: 0.8
+  maxSize: 1.2
+  minTorque: 0.4
+  maxTorque: 0.8

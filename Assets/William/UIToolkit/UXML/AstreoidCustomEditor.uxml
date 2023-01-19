@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/William/UIToolkit/USS/AstreoidTypeEditor.uss?fileID=7433441132597879392&amp;guid=d72f0afad3c2e544c96d44a7d003877d&amp;type=3#AstreoidTypeEditor" />
+    <ui:Label tabindex="-1" text="Asteroid Config" display-tooltip-when-elided="true" style="justify-content: flex-start; align-self: center; align-items: stretch; font-size: 55px; -unity-text-outline-width: 0; -unity-text-outline-color: rgba(0, 0, 0, 0);" />
+    <ui:VisualElement name="forcePane" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Slider picking-mode="Ignore" label="Min Force" value="2" high-value="5" low-value="1" show-input-field="true" binding-path="minForce" />
+        <ui:Slider picking-mode="Ignore" label="Max Force" value="6" high-value="10" binding-path="maxForce" low-value="5" show-input-field="true" />
+    </ui:VisualElement>
+    <ui:VisualElement name="sizePane" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Slider picking-mode="Ignore" label="Min Size" value="0.4" high-value="1" show-input-field="true" binding-path="minSize" low-value="0.2" />
+        <ui:Slider picking-mode="Ignore" label="Max Size" value="1" high-value="1.2" low-value="0.4" show-input-field="true" binding-path="maxSize" />
+        <ui:EnumField label="Asteroid Size" type="AsteroidType+AsteroidSize, Assembly-CSharp" binding-path="asteroidSize" include-obsolete-values="false" value="Medium" name="asteroid-size" />
+        <ui:SliderInt picking-mode="Ignore" label="Damage" value="1" high-value="10" low-value="1" show-input-field="true" binding-path="damage" />
+    </ui:VisualElement>
+    <ui:VisualElement name="torquePane" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:Slider picking-mode="Ignore" label="Min Rotation Speed" value="0.1" high-value="0.5" binding-path="minTorque" low-value="0.1" show-input-field="true" />
+        <ui:Slider picking-mode="Ignore" label="Max Rotation Speed" value="0.5" high-value="1" binding-path="maxTorque" low-value="0.5" show-input-field="true" />
+    </ui:VisualElement>
+    <ui:VisualElement name="colorPane" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <uie:ColorField value="#000000FF" binding-path="asteroidColor" style="align-self: auto; align-items: auto;" />
+    </ui:VisualElement>
+</ui:UXML>
