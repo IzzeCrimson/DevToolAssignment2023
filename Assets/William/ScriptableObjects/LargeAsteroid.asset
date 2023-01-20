@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LargeAsteroid
   m_EditorClassIdentifier: 
   asteroidSize: 3
-  asteroidColor: {r: 0.45438388, g: 0, b: 0.8396226, a: 1}
+  asteroidColor: {r: 0.4850165, g: 0, b: 0.8962264, a: 1}
   minForce: 2
   maxForce: 6
   minSize: 1

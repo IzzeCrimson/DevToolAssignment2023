@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SmallAsteroid
   m_EditorClassIdentifier: 
   asteroidSize: 0
-  asteroidColor: {r: 0.9460345, g: 0.8820755, b: 1, a: 1}
+  asteroidColor: {r: 0.83531237, g: 0.6462264, b: 1, a: 1}
   minForce: 2
   maxForce: 6
   minSize: 0.3
@@ -21,3 +21,4 @@ MonoBehaviour:
   minTorque: 0.2
   maxTorque: 0.6
   damage: 1
+  smallerPartsAmount: 0
