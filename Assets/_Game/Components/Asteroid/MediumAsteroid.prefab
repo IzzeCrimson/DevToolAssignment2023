@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onAsteroidDestroyed: {fileID: 11400000, guid: 6194a1f60d68f9f4da5519ce74b63a58, type: 2}
-  astreoidType: {fileID: 11400000, guid: 710620800129c4a4a8e65fd72b0e814c, type: 2}
+  asteroidType: {fileID: 11400000, guid: 710620800129c4a4a8e65fd72b0e814c, type: 2}
   _spriteRenderer: {fileID: 7434321719335165977}
   _shape: {fileID: 1524412162417054026}
 --- !u!50 &1784223117350305362

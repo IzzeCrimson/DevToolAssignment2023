@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306fcff9e60a75441b685573785f45be, type: 3}
   m_Name: SmallAsteroid
   m_EditorClassIdentifier: 
-  asteroidColor: {r: 0.89493996, g: 0.7688679, b: 1, a: 1}
-  minForce: 1
-  maxForce: 5
-  minSize: 0.2
+  asteroidSize: 0
+  asteroidColor: {r: 0.9460345, g: 0.8820755, b: 1, a: 1}
+  minForce: 2
+  maxForce: 6
+  minSize: 0.3
   maxSize: 0.5
   minTorque: 0.2
   maxTorque: 0.6
+  damage: 1

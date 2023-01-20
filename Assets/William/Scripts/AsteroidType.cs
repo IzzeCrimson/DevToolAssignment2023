@@ -10,9 +10,9 @@ public class AsteroidType : ScriptableObject
   
     public enum AsteroidSize
     {
-        Small,
-        Medium,
-        Large
+        Small = 1,
+        Medium = 2,
+        Large = 3
     }
 
     public AsteroidSize asteroidSize;
@@ -25,4 +25,5 @@ public class AsteroidType : ScriptableObject
     public float minTorque;
     public float maxTorque;
     public int damage;
+    public int smallerPartsAmount;
 }

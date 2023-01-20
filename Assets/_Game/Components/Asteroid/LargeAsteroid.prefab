@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _onAsteroidDestroyed: {fileID: 11400000, guid: 6194a1f60d68f9f4da5519ce74b63a58, type: 2}
-  astreoidType: {fileID: 11400000, guid: 7de8ffa97d4bfd845868ed18ffc7a4cc, type: 2}
+  asteroidType: {fileID: 11400000, guid: 7de8ffa97d4bfd845868ed18ffc7a4cc, type: 2}
   _spriteRenderer: {fileID: 7434321719335165977}
   _shape: {fileID: 1524412162417054026}
 --- !u!50 &1784223117350305362
@@ -210,7 +210,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.55
+  m_Radius: 2
 --- !u!1 &8259306228213721809
 GameObject:
   m_ObjectHideFlags: 0

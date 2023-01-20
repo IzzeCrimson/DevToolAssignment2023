@@ -7,9 +7,10 @@
     </ui:VisualElement>
     <ui:VisualElement name="sizePane" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
         <ui:Slider picking-mode="Ignore" label="Min Size" value="0.4" high-value="1" show-input-field="true" binding-path="minSize" low-value="0.2" />
-        <ui:Slider picking-mode="Ignore" label="Max Size" value="1" high-value="1.2" low-value="0.4" show-input-field="true" binding-path="maxSize" />
+        <ui:Slider picking-mode="Ignore" label="Max Size" value="1" high-value="2" low-value="0.2" show-input-field="true" binding-path="maxSize" />
         <ui:EnumField label="Asteroid Size" type="AsteroidType+AsteroidSize, Assembly-CSharp" binding-path="asteroidSize" include-obsolete-values="false" value="Medium" name="asteroid-size" />
         <ui:SliderInt picking-mode="Ignore" label="Damage" value="1" high-value="10" low-value="1" show-input-field="true" binding-path="damage" />
+        <ui:SliderInt picking-mode="Ignore" label="Smaller Parts Amount" value="4" high-value="8" show-input-field="true" binding-path="smallerPartsAmount" />
     </ui:VisualElement>
     <ui:VisualElement name="torquePane" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
         <ui:Slider picking-mode="Ignore" label="Min Rotation Speed" value="0.1" high-value="0.5" binding-path="minTorque" low-value="0.1" show-input-field="true" />
